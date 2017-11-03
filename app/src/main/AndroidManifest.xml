@@ -8,14 +8,26 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".FabricTestAndroidApplication">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <data android:scheme="aaronfabrictest" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
         </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="aa2e1d222aef48c8aeb852cbc8c78da76a79e18e" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

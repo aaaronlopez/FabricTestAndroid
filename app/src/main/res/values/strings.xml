@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FabricTestAndroid</string>
+    <string name="io.branch.apiKey" translatable="false">key_live_heCTlczbYY2So7i0Ikt0kbnjsrkEZeNB</string>
 </resources>
